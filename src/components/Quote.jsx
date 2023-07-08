@@ -15,6 +15,7 @@ const Price = styled.span`
 `
 
 const Image = styled.img`
+    margin: auto 0;
     margin-right: 20px;
 `
 
