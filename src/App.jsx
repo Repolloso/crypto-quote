@@ -34,7 +34,6 @@ const Contenedor = styled.div`
   }
 `
 const Imagen = styled.img`
-  max-width: 400px;
   width: 80%;
   margin: 100px auto 0 auto;
   display: block;
@@ -67,7 +66,7 @@ function App() {
   return (
     <>
       <Contenedor>
-        <Imagen src={ImagenCrypto} alt="Imagen-Cripto" />
+        <Imagen src={ImagenCrypto} alt="Imagen-Cripto" width={400} height={400} loading="lazy"/>
         <div>
           <Heading>Cotiza Cryptomonedas al instante</Heading>
 
