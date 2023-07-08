@@ -15,8 +15,6 @@ const Price = styled.span`
 `
 
 const Image = styled.img`
-    height: 150px;
-    width: 150px;
     margin-right: 20px;
 `
 
@@ -41,7 +39,7 @@ const Quote = ({ result }) => {
         <>
         <Result>
             <Container>
-                <Image src={`https://cryptocompare.com/${IMAGEURL}`} alt="crpto-logo" />
+                <Image src={`https://cryptocompare.com/${IMAGEURL}`} alt="crpto-logo" width={150} height={150} loading="lazy" />
                 <div>
                     <Price>The price is: <span>{PRICE}</span></Price>
                     <Text>The highest price of the day is: <span>{HIGHDAY}</span></Text>
